@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Italiana&family=Jersey+25&family=Mingzat&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EBEBEB;
+    background-image: 
+        linear-gradient( #a1a1a1 1px, transparent 1px),
+        linear-gradient(90deg, #a1a1a1 1px, transparent 1px);
+    /* to increase the size */
+        background-size: 35px 35px; 
+        background-position: -1px -1px;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 100%;
+}
