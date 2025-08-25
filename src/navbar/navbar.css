@@ -30,7 +30,7 @@ nav .container {
     justify-content: center;
     gap: 2rem;
     font-family: 'Jersey 25', sans-serif;
-    padding: 8px 40px;
+    padding: 8px 0;
     box-sizing: border-box;
     transition: all 0.4s ease;
 }

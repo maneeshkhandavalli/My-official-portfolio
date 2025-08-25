@@ -1,23 +1,23 @@
 .main-container, .knowmore-card{
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    align-content: space-evenly;
 }
 
 
 .my-discription-knowmore{
     flex: 1;
-    top: 10%;
+    top: 6%;
     font-size: 48px;
     max-width: 60%;
     border: 2px solid #333;
     border-radius: 0;
     background-color: #ece9e9;
-    padding: 20px;
+    padding: 40px;
     box-shadow: #333;
     position: relative;
     right: -1px;
-    left: 100px;
+    left: 0;
 }
 .Contact-button{
     background-color: #FFEA00;
@@ -31,7 +31,7 @@
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;
-    animation: buttonPulse 2s ease-in-out infinite;
+    animation:  2s ease-in-out infinite;
 }
 .Contact-button:hover{
     transform: translateY(-3px) scale(1.05);
@@ -41,4 +41,13 @@
 .logo{
     height: 100px;
     width: auto;
+    margin-top: 40px;
+    padding-right: 20px;
+}
+
+.knowmore-card{
+    padding-right: 0;
+    position: relative;
+    right: 0;
+    left: 0;
 }
