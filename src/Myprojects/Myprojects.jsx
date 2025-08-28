@@ -35,7 +35,7 @@ function Myprojects() {
     }, [])
 
     return(
-        <div className="myprojects-entire-container">
+        <div className="myprojects-entire-container" id="myprojects">
             <h1 className="main-heading" ref={headingRef}>My Projects</h1>
             <div className="myproject-container">
             <div className="project-card-containers">

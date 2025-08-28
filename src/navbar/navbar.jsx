@@ -50,7 +50,8 @@ function Navbar(){
                 <a className="navbar-item" href="#home">home</a>
                 <a className="navbar-item" href="#aboutme">about me</a>
                 <a className="navbar-item" href="#myskills">skills</a>
-                <a className="navbar-item" href="#">projects</a>
+                <a className="navbar-item" href="#myprojects">projects</a>
+                <a className="navbar-item" href="#knowmore">Know more</a>
                 <a className="navbar-item" href="#contact">contact</a>
             </div>
         </nav>

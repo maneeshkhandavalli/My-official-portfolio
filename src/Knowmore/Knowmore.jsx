@@ -53,7 +53,7 @@ function Knowmore() {
     }, [])
 
     return(
-        <div className="container">
+        <div className="container" id="knowmore">
             <h1 className="main-heading" ref={headingRef}>Know more</h1>
             <div className="main-container">
                 <div ref={descriptionRef}>
