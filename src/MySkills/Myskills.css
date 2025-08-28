@@ -1,14 +1,14 @@
 .main-heading {
-    font-size: 96px;
-    padding: 10px;
-    margin-bottom: 40px;
+    font-size: 6rem;
+    padding: 0.625rem;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
 .skills-grid {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 2.5rem;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
@@ -16,23 +16,23 @@
 }
 
 .card-container {
-    border: 1px solid #333;
+    border: 0.0625rem solid #333;
     border-radius: 0;
-    padding: 25px;
+    padding: 1.5625rem;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 350px;
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    width: 18.75rem;
+    height: 21.875rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
 .card-name {
-    font-size: 48px;
-    margin-bottom: 25px;
+    font-size: 3rem;
+    margin-bottom: 1.5625rem;
     color: #333;
     text-align: center;
 }
@@ -40,15 +40,15 @@
 .icons-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 1.5625rem;
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .icons {
-    height: 100px;
+    height: 6.25rem;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -57,10 +57,67 @@
     transform: scale(1.1);
 }
 .lovable-icons{
-    height: 70px;
+    height: 4.375rem;
     width: auto;
     transition: transform 0.3s ease;
 }
 .lovable-icons:hover {
     transform: scale(1.1);
+}
+
+/* Responsive adjustments for Skills section */
+@media (max-width: 1400px) and (min-width: 769px) {
+    .main-heading {
+        font-size: 5rem;
+    }
+    
+    .card-name {
+        font-size: 2.5rem;
+    }
+    
+    .card-container {
+        width: 16rem;
+        height: 19rem;
+        padding: 1.2rem;
+    }
+    
+    .skills-grid {
+        gap: 2rem;
+    }
+    
+    .icons {
+        height: 5rem;
+    }
+    
+    .lovable-icons {
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    .main-heading {
+        font-size: 4rem;
+    }
+    
+    .card-name {
+        font-size: 2rem;
+    }
+    
+    .card-container {
+        width: 14rem;
+        height: 17rem;
+        padding: 1rem;
+    }
+    
+    .skills-grid {
+        gap: 1.5rem;
+    }
+    
+    .icons {
+        height: 4rem;
+    }
+    
+    .lovable-icons {
+        height: 3rem;
+    }
 }

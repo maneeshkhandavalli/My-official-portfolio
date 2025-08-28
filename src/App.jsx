@@ -1,4 +1,5 @@
 import "./index.css"
+import "./styles/scrollAnimations.css"
 import Navbar from "./navbar/navbar.jsx"
 import Home from "./home/Home.jsx"
 import Aboutme from "./Aboutme/aboutme.jsx"

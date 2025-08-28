@@ -1,53 +1,133 @@
-.main-container, .knowmore-card{
+.main-container {
     display: flex;
     flex-direction: row;
-    align-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.knowmore-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-.my-discription-knowmore{
+.my-discription-knowmore {
     flex: 1;
-    top: 6%;
-    font-size: 48px;
-    max-width: 60%;
-    border: 2px solid #333;
+    font-size: 3rem;
+    max-width: 100%;
+    border: 0.125rem solid #333;
     border-radius: 0;
     background-color: #ece9e9;
-    padding: 40px;
-    box-shadow: #333;
-    position: relative;
-    right: -1px;
-    left: 0;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
-.Contact-button{
+.Contact-button {
     background-color: #FFEA00;
-    width: 400px;
-    border: 2px solid #333;
-    font-size: 48px;
-    padding: 20px;
+    width: 25rem;
+    border: 0.125rem solid #333;
+    font-size: 3rem;
+    padding: 1.25rem;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 1rem;
     border-radius: 0;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;
-    animation:  2s ease-in-out infinite;
 }
 .Contact-button:hover{
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.1875rem) scale(1.05);
+    box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.2);
     border-color: #000;
 }
-.logo{
-    height: 100px;
+.logo {
+    height: 6.25rem;
     width: auto;
-    margin-top: 40px;
-    padding-right: 20px;
+    margin-top: 1rem;
+    padding-right: 1.25rem;
 }
 
-.knowmore-card{
-    padding-right: 0;
-    position: relative;
-    right: 0;
-    left: 0;
+.contact-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+/* Responsive adjustments for Know More section */
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    
+    .my-discription-knowmore {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .contact-buttons {
+        align-items: center;
+        width: 100%;
+    }
+    
+    .Contact-button {
+        font-size: 2.5rem;
+        width: 22rem;
+        padding: 1rem;
+    }
+    
+    .logo {
+        height: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-discription-knowmore {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .Contact-button {
+        font-size: 2rem;
+        width: 18rem;
+        padding: 0.8rem;
+    }
+    
+    .logo {
+        height: 4rem;
+    }
+    
+    .knowmore-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-discription-knowmore {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+    
+    .Contact-button {
+        font-size: 1.5rem;
+        width: 15rem;
+        padding: 0.6rem;
+    }
+    
+    .logo {
+        height: 3rem;
+        margin-top: 0.5rem;
+        padding-right: 0;
+        margin-bottom: 0.5rem;
+    }
 }

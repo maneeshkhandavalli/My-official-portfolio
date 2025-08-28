@@ -13,15 +13,15 @@ nav{
 
 nav.scrolled {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
     width: auto;
     background: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    border-radius: 1.25rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.2);
     z-index: 1000;
 }
 
@@ -30,13 +30,14 @@ nav .container {
     justify-content: center;
     gap: 2rem;
     font-family: 'Jersey 25', sans-serif;
-    padding: 8px 0;
+    padding: 0.5rem 0;
     box-sizing: border-box;
     transition: all 0.4s ease;
+    width: 100%;
 }
 
 nav.scrolled .container {
-    padding: 15px 25px;
+    padding: 0.9375rem 1.5625rem;
     gap: 1.5rem;
     flex-direction: column;
     align-items: center;
@@ -44,11 +45,11 @@ nav.scrolled .container {
 
 .navbar-item{
     background-color: #FFEA00;
-    font-size: 32px;
-    padding: 10px;
+    font-size: 2rem;
+    padding: 0.625rem;
     color: #333;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -57,10 +58,10 @@ nav.scrolled .container {
 
 nav.scrolled .navbar-item {
     background-color: rgba(255, 234, 0, 0.9);
-    font-size: 24px;
-    padding: 8px 15px;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
+    font-size: 1.5rem;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(0.3125rem);
 }
 
 .navbar-item::after {
@@ -68,10 +69,10 @@ nav.scrolled .navbar-item {
     position: absolute;
     bottom: 0;
     width: 0;
-    height: 3px;
+    height: 0.1875rem;
     background: linear-gradient(90deg, #333, #666, #333);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border-radius: 2px;
+    border-radius: 0.125rem;
     left: var(--line-start, 0);
 }
 
@@ -80,12 +81,12 @@ nav.scrolled .navbar-item {
 }
 
 .navbar-item:hover {
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
     color: #000;
 }
 
 nav.scrolled .navbar-item:hover {
-    transform: translateX(5px);
+    transform: translateX(0.3125rem);
     background-color: rgba(255, 234, 0, 1);
 }
 
